@@ -13,7 +13,7 @@ Current Status:
 - [x] BedSubType [REP]
 - [x] BombSubType
 - [x] BombVariant
-- [ ] ButtonAction
+- [x] ButtonAction
 - [ ] CacheFlag
 - [ ] CallbackPriority [REP]
 - [ ] Card
