@@ -1,1 +1,173 @@
 # HxTBOI
+Current Status:
+
+## Repentance+/Repentance/Afterbirth+
+<details>
+<summary>Enums</summary>
+
+- [x] ActionTriggers
+- [x] ActiveSlot [REP]
+- [x] BabySubType
+- [x] BackdropType [REP]
+- [x] BatterySubType [REP]
+- [x] BedSubType [REP]
+- [x] BombSubType
+- [x] BombVariant
+- [ ] ButtonAction
+- [ ] CacheFlag
+- [ ] CallbackPriority [REP]
+- [ ] Card
+- [ ] Challenge
+- [ ] ChampionColor [REP]
+- [ ] ChestSubType
+- [ ] CoinSubType
+- [ ] CollectibleType
+- [ ] DamageFlag
+- [ ] Difficulty
+- [ ] Direction
+- [ ] DoorSlot
+- [ ] DoorState
+- [ ] DoorVariant
+- [ ] DrawStringAlignment [REP]
+- [ ] EffectVariant
+- [ ] EntityCollisionClass
+- [ ] EntityFlag
+- [ ] EntityGridCollisionClass
+- [ ] EntityPartition
+- [ ] EntityType
+- [ ] FamiliarVariant
+- [ ] GameStateFlag
+- [ ] GridCollisionClass
+- [ ] GridEntityType
+- [ ] GridRooms
+- [ ] HeartSubType
+- [ ] InputHook
+- [ ] ItemConfig [REP]
+- [ ] ItemPoolType
+- [ ] ItemType
+- [ ] Keyboard
+- [ ] KeySubType
+- [ ] LaserOffset
+- [ ] LaserSubType [REP]
+- [ ] LaserVariant
+- [ ] LevelCurse
+- [ ] LevelStage
+- [ ] LevelStateFlag
+- [ ] LocustSubtypes
+- [ ] ModCallbacks
+- [ ] Mouse
+- [ ] Music
+- [ ] NpcState
+- [ ] NullItemID
+- [ ] PickupPrice
+- [ ] PickupVariant
+- [ ] PillColor
+- [ ] PillEffect
+- [ ] PlayerForm
+- [ ] PlayerItemState [AB+]
+- [ ] PlayerSpriteLayer
+- [ ] PlayerType
+- [ ] PoopPickupSubType [REP]
+- [ ] PoopSpellType [REP]
+- [ ] ProjectileFlags
+- [ ] ProjectileVariant
+- [ ] RenderMode [REP]
+- [ ] RoomDescriptor [REP]
+- [ ] RoomShape
+- [ ] RoomTransitionAnim [REP]
+- [ ] RoomType
+- [ ] SackSubType [REP]
+- [ ] SeedEffect
+- [ ] SkinColor [REP]
+- [ ] SortingLayer
+- [ ] SoundEffect
+- [ ] StageType
+- [ ] TearFlags
+- [ ] TearVariant
+- [ ] TrinketType
+- [ ] UseFlag [REP]
+- [ ] WeaponType
+</details>
+
+## Repentogon
+<details>
+<summary>Enums</summary>
+
+- [ ] Achievement
+- [ ] AddHealthType
+- [ ] AnimRenderFlags
+- [ ] AnnouncerVoiceMode
+- [ ] AutocompleteType
+- [ ] BagOfCraftingPickup
+- [ ] BlendFactor
+- [ ] BlendType
+- [ ] BombCostumeLayer
+- [ ] BossType
+- [ ] ButtonActionBitwise
+- [ ] CameraStyle
+- [ ] CompletionType
+- [ ] ConceptionFamiliarFlag
+- [ ] ConsoleFont
+- [ ] DebugFlag
+- [ ] DeliriumCallbacks
+- [ ] DialogButtons
+- [ ] DialogIcons
+- [ ] DialogReturn
+- [ ] Dimension
+- [ ] DipSubType
+- [ ] DwmWindowAttribute
+- [ ] Ending
+- [ ] EntityPoopVariant
+- [ ] EntityTag
+- [ ] EventCounter
+- [ ] ExtraHudStyle
+- [ ] FadeoutTarget
+- [ ] FollowerPriority
+- [ ] GetCollectibleFlag
+- [ ] GLSLType
+- [ ] Giantbook
+- [ ] GibFlag
+- [ ] GridPoopVariant
+- [ ] HealthType
+- [ ] ImGuiCallback
+- [ ] ImGuiColor
+- [ ] ImGuiData
+- [ ] ImGuiElement
+- [ ] ImGuiNotificationType
+- [ ] ItemAnim
+- [ ] KnifeSubType
+- [ ] KnifeVariant
+- [ ] Language
+- [ ] LineCheckMode
+- [ ] MainMenuType
+- [ ] MinimapState
+- [ ] ModCallbacks
+- [ ] MouseButton
+- [ ] NullPickupSubType
+- [ ] PauseMenuStates
+- [ ] PedestalType
+- [ ] PillCardSlot
+- [ ] PlayerVariant
+- [ ] PocketItemType
+- [ ] PressurePlateVariant
+- [ ] ProceduralEffectActionType
+- [ ] ProceduralEffectConditionType
+- [ ] ProjectileMode
+- [ ] PurityState
+- [ ] RetractingSpikesVariant
+- [ ] RoomSubType
+- [ ] ShaderType
+- [ ] SlotVariant
+- [ ] SpecialQuest
+- [ ] StbGridType
+- [ ] StbPoopSubType
+- [ ] StbRailVariant
+- [ ] StbRockSubType
+- [ ] StbTeleporterSubType
+- [ ] StbType
+- [ ] TaintedMarksGroup
+- [ ] TeleporterVariant
+- [ ] WeaponModifier
+- [ ] WispSubType
+- [ ] XMLNode
+</details>

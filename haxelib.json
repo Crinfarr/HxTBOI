@@ -1,0 +1,16 @@
+{
+    "classPath": "src",
+    "contributors": [
+        "Crinfarr"
+    ],
+    "dependencies": {},
+    "description": "Lua externs for The Binding of Isaac modding. Lua is a first class target for haxe, apparently, so why not?",
+    "documentation": {},
+    "license": "GPL",
+    "main": "",
+    "name": "HxTBOI",
+    "releasenote": "",
+    "tags": ["Lua", "Game", "Modding"],
+    "url": "https://github.com/Crinfarr/HxTBOI",
+    "version": "0.0.0"
+}
