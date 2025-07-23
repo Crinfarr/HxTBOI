@@ -1,9 +1,10 @@
 package test;
 
-import enums.BabySubType;
+import enums.CallbackPriority;
+import enums.CacheFlag;
 
 class Test {
     static function main() {
-        trace(BabySubType.Unassigned);
+        Sys.print(CacheFlag.Damage & CacheFlag.Flying);
     }
 }
