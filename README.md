@@ -15,7 +15,7 @@ Current Status:
 - [x] BombVariant
 - [x] ButtonAction
 - [x] CacheFlag
-- [ ] CallbackPriority [REP]
+- [x] CallbackPriority [REP]
 - [ ] Card
 - [ ] Challenge
 - [ ] ChampionColor [REP]
