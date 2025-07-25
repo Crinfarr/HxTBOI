@@ -1,5 +1,6 @@
 package;
 
+import haxe.macro.Expr.ComplexType;
 #if macro
 import haxe.Exception;
 import haxe.macro.Compiler;
@@ -19,38 +20,68 @@ class Macros {
         }
         return null;
     }
-    macro static function allowBitwise():Array<Field> {
+    macro static function isaacBitset():Array<Field> {
         var fields = Context.getBuildFields();
-		final localClass = Context.getLocalClass().get();
+		
+        final localClass = Context.getLocalClass().get();
+        final lctype = TPath({
+			pack: localClass.module.split('.').slice(localClass.module.split('.').length),
+            name: localClass.module.split('.')[localClass.module.split('.').length-1]
+        });
+
         final bitAnd:Field = {
-            meta: [
-                {
-                    name: ":op",
-                    params: [macro "A & B"],
-                    pos: Context.currentPos()
-                }
-            ],
-            access: [APrivate],
-            name: "_nativeBitwiseAnd",
-            pos: Context.currentPos(),
+            meta: [{
+                name: ":op",
+                params: [(macro A & B)],
+                pos: Context.currentPos()
+            }],
+            access: [APrivate, AExtern],
+			name: '_nativeBitwiseAnd${Math.floor((Math.random() * 9999))}',
             kind: FFun({
                 args: [{
                     name: "a0",
-                    type: TPath({
-						pack: localClass.pack,
-                        name: localClass.name
-                    })
+                    type: lctype
                 }],
-                ret: TPath({
-                    pack: localClass.pack,
-                    name: localClass.name
-                })
-            })
+				ret: lctype,
+            }),
+            pos: Context.currentPos(),
+            
         }
-        fields.push(bitAnd);
-        return fields;
+        final bitwiseOr:Field = {
+            meta: [{
+                name: ":op",
+                params: [(macro A | B)],
+                pos: Context.currentPos()
+            }],
+            access: [APrivate, AExtern],
+			name: '_nativeBitwiseOr${Math.floor((Math.random() * 9999))}',
+            kind: FFun({
+                args: [{
+                    name: "a0",
+                    type: lctype
+                }],
+                ret: lctype
+            }),
+            pos: Context.currentPos()
+        }
+        final bitwiseXOr:Field = {
+            meta: [{
+                name: ":op",
+                params: [(macro A ^ B)],
+                pos: Context.currentPos()
+            }],
+            access: [APrivate, AExtern],
+			name: '_nativeBitwiseXOr${Math.floor((Math.random() * 9999))}',
+            kind: FFun({
+                args: [{
+                    name: "a0",
+                    type: lctype
+                }],
+                ret: lctype
+            }),
+            pos: Context.currentPos()
+        }
+        return fields.concat([bitAnd, bitwiseOr, bitwiseXOr]);
     }
-    // T.__nativeAnd(T)
-	// @:op(A & B) private function __nativeAnd(a0:T):T;
 }
 #end
