@@ -1,6 +1,5 @@
 package test;
 
-import enums.CallbackPriority;
 import enums.CacheFlag;
 
 class Test {
