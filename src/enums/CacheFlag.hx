@@ -2,23 +2,24 @@ package enums;
 
 @:native("CacheFlag")
 @:build(Macros.isaacBitset())
+@:build(Macros.nativeNameMod(Prefix("CACHE_"), AllCaps))
 extern enum abstract CacheFlag(Int) {
-	@:native("CACHE_DAMAGE")        final Damage;
-	@:native("CACHE_FIREDELAY")     final FireDelay;
-	@:native("CACHE_SHOTSPEED")     final ShotSpeed;
-	@:native("CACHE_RANGE")         final Range;
-	@:native("CACHE_SPEED")         final Speed;
-	@:native("CACHE_TEARFLAG")      final TearFlag;
-	@:native("CACHE_TEARCOLOR")     final TearColor;
-	@:native("CACHE_FLYING")        final Flying;
-	@:native("CACHE_WEAPON")        final Weapon;
-	@:native("CACHE_FAMILIARS")     final Familiars;
-	@:native("CACHE_LUCK")          final Luck;
+	final Damage;
+	final FireDelay;
+	final ShotSpeed;
+	final Range;
+	final Speed;
+	final TearFlag;
+	final TearColor;
+	final Flying;
+	final Weapon;
+	final Familiars;
+	final Luck;
     #if (IsaacVersion == "Rep" || IsaacVersion == "RepPlus" || IsaacVersion == "REPENTOGON")
-	@:native("CACHE_SIZE")          final Size;
-	@:native("CACHE_COLOR")         final Color;
+	final Size;
+	final Color;
 	@:native("CACHE_PICKUP_VISION") final PickupVision;
 	@:native("CACHE_TWIN_SYNC")     final TwinSync;
     #end
-	@:native("CACHE_ALL")           final All;
+	final All;
 }

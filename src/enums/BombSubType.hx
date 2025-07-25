@@ -1,14 +1,15 @@
 package enums;
 
 @:native("BombSubType")
+@:build(Macros.nativeNameMod(Prefix("BOMB_"), AllCaps))
 extern enum BombSubType {
-	@:native("BOMB_NORMAL") Normal;
-	@:native("BOMB_DOUBLEPACK") DoublePack;
-	@:native("BOMB_TROLL") Troll;
-	@:native("BOMB_GOLDEN") Golden;
-	@:native("BOMB_SUPERTROLL") SuperTroll;
+	Normal;
+	DoublePack;
+	Troll;
+	Golden;
+	SuperTroll;
 	#if (IsaacVersion == "Rep" || IsaacVersion == "RepPlus" || IsaacVersion == "REPENTOGON")
-	@:native("BOMB_GOLDENTROLL") GoldenTroll;
-	@:native("BOMB_GIGA") Giga;
+	GoldenTroll;
+	Giga;
     #end
 }

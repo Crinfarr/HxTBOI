@@ -1,9 +1,8 @@
 package test;
 
-import enums.CacheFlag;
+import enums.CallbackPriority;
 
 class Test {
-    static function main() {
-        Sys.print(CacheFlag.Damage & CacheFlag.Flying);
-    }
+	static function main() {
+	}
 }
