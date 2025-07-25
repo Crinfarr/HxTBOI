@@ -1,9 +1,8 @@
 package enums;
 
 @:native("CacheFlag")
-@:macro(Macros.allowBitwise())
+@:build(Macros.isaacBitset())
 extern enum abstract CacheFlag(Int) {
-	@:op(A & B) private function _nativeAnd(a0:CacheFlag):CacheFlag;
 	@:native("CACHE_DAMAGE")        final Damage;
 	@:native("CACHE_FIREDELAY")     final FireDelay;
 	@:native("CACHE_SHOTSPEED")     final ShotSpeed;
