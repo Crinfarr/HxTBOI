@@ -1,8 +1,5 @@
 package test;
-
-import enums.CallbackPriority;
-
-class Test {
+class Test implements IsaacMod {
 	static function main() {
 	}
 }

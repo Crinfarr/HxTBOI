@@ -1,5 +1,9 @@
 package;
 
+import haxe.macro.Type.Ref;
+import haxe.ValueException;
+import haxe.macro.Type.ModuleType;
+import haxe.macro.ComplexTypeTools;
 import haxe.macro.ExprTools;
 #if macro
 import haxe.macro.Expr.ComplexType;
@@ -11,10 +15,11 @@ import haxe.macro.Expr.ExprOf;
 import haxe.macro.Expr;
 
 using StringTools;
+using haxe.macro.TypeTools;
 using haxe.macro.TypedExprTools;
 
 class Macros {
-	macro static function setupVersion() {
+	macro static function setup() {
 		final tboiVersion = Context.getDefines()["IsaacVersion"];
 		if (tboiVersion == null) {
 			Compiler.define("IsaacVersion", "RepPlus");
@@ -156,6 +161,24 @@ class Macros {
 		}
 		return fields;
 	}
+    macro static function ensureMainIsIsaacMod() {
+        final conf = Compiler.getConfiguration();
+		final mainModule = Context.resolveType(TPath({pack: conf.mainClass.pack, name: conf.mainClass.name}), Context.currentPos()).toModuleType();
+		switch (mainModule) {
+            case ModuleType.TClassDecl(rClassType):
+                if (!(rClassType
+                        .get()
+                        .interfaces
+                        .filter(iface -> iface.t.toString() == "IsaacMod")
+                        .length > 0)
+                ) {
+                    throw new ValueException('Invalid Main class: An Isaac mod\'s main class must implement IsaacMod');
+                }
+            default:
+                throw new ValueException('Invalid Main: ${mainModule} is somehow not TClassDecl');
+        }
+        return null;
+    }
 }
 
 enum ENameMod {

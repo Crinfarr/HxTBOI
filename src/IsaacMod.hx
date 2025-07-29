@@ -1,0 +1,5 @@
+package ;
+
+@:remove
+interface IsaacMod {
+}

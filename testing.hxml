@@ -1,4 +1,5 @@
 --lua build/out.lua
 -cp src
 --main test.Test
---macro Macros.setupVersion()
+--macro Macros.setup()
+--macro Macros.ensureMainIsIsaacMod()

@@ -1,1 +1,2 @@
---macro Macros.setupVersion()
+--macro Macros.setup()
+--macro Macros.ensureMainIsIsaacMod()
