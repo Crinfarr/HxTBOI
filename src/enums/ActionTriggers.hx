@@ -6,13 +6,6 @@ package enums;
 @:build(Macros.isaacBitset())
 @:build(Macros.nativeNameMod(Prefix("ACTIONTRIGGER_"), AllCaps))
 extern enum abstract ActionTriggers(Int) {
-    // @:native("ACTIONTRIGGER_NONE")          final None;
-	// @:native("ACTIONTRIGGER_BOMBPLACED")    final BombPlaced;
-	// @:native("ACTIONTRIGGER_MOVED")         final Moved;
-	// @:native("ACTIONTRIGGER_SHOOTING")      final Shooting;
-	// @:native("ACTIONTRIGGER_CARDPILLUSED")  final CardPillUsed;
-	// @:native("ACTIONTRIGGER_ITEMACTIVATED") final ItemActivated;
-	// @:native("ACTIONTRIGGER_ITEMSDROPPED")  final ItemsDropped;
 	final None;
 	final BombPlaced;
 	final Moved;
